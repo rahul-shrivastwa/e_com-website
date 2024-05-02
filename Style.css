@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #181816;
+}
+
+.logo a{
+    color: #fff;
+    font-weight: 800;
+    transition-duration: .5s;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.logo a:hover{
+    color: #F0C506;
+}
+
+.menu ul{
+    display: flex;
+}
+
+
+.menu ul li{
+    list-style-type: none;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 2px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition-duration: 1s;
+    bottom: 0;
+}
+
+.menu ul li a:hover{
+    color: #F3A708;
+}
+
+.search{
+    display: flex;
+    text-decoration: none;
+}
+
+#input{
+    height: 30px;
+    width: 300px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+.searchIcon{
+    font-size: 20px;
+    color: #181816;
+    position: relative;
+    margin: 03px -28px;
+    background-color: #fff;
+}
+
+.img_slider img{
+    height: 720px;
+    width: 1080px;
+}
+
+.img_slider{
+    display: flex;
+    /* float: left; */
+    position: relative;
+    width: 1080px;
+    height: 720px;
+    animation-name: slide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+
+@keyframes slide{
+    0%{
+        left: 0px;
+    }
+    15%{
+        left: 0px;
+    }
+    20%{
+        left: -1080px;
+    }
+    32%{
+        left: -1080px;
+    }
+    35%{
+        left: -2160px;
+    }
+    47%{
+        left: -2160px;
+    }
+    50%{
+        left: -3240px;
+    }
+    63%{
+        left: -3240px;
+    }
+    68%{
+        left: -4320px;
+    }
+    75%{
+        left: -4320px;
+    }
+    80%{
+        left: -5400px;
+    }
+    90%{
+        left: -5400px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+.section1{
+    width: 1080px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.section2 .container .items .img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    transition-duration: 0.8s;
+}
+
+.section2 .container .items:hover .img img{
+    transform: scale(1.2);
+    border-radius: 12px;
+}
+
+.section2 .container .items .img{
+    overflow: hidden;
+    border-radius: 12px;
+    height: 200px;
+}
+
+.section2 .container{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.section2 .container .items{
+    height: 300px;
+    width: 200px;
+    margin: 10px;
+    background-color: #fff;
+    border: 2.5px solid #181816;
+    border-radius: 14px;
+}
+
+.section2 .container .items .name{
+    text-align: center;
+    background-color: #F0C506;
+    height: 25px;
+    padding-top: 4px;
+    color: #fff;
+}
+
+.section2 .container .items .price{
+    float: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    display: block;
+    width: 100%;
+    color: #f00;
+    font-weight: 600;
+}
+
+.section2 .container .items .info{
+    padding-top: 8px;
+    padding-left: 10px;
+    font-size: 13px;
+    color: #F3A708;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #181816;
+    color: #fff;
+    align-items: center;
+}
+
+.footer0{
+    font-weight: 800;
+    transition-duration: 1s;
+    margin-top: 10px;
+}
+
+.footer0:hover{
+    color: #F3A708;
+}
+
+
+.footer1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+}
+
+.social-media{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-media a{
+    color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.social-media a i{
+    color: #fff;
+    font-size: 30px;
+    transition-duration: .3s;
+}
+
+.social-media a:hover i{
+    color: #f00;
+}
+
+.footer2{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer2 div{
+    margin: 10px;
+}
+
+.heading{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.heading:hover{
+    color: #EAA807;
+}
+
+
+.div{
+    transition-duration: 0.5s;
+}
+
+.div:hover{
+    transform: scale(1.05);
+}
+
+.footer3{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
